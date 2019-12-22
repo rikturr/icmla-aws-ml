@@ -2,15 +2,19 @@
 
 This is the code accompanying the tutorial given at [IEEE ICMLA 2019](https://www.icmla-conference.org/icmla19/) titled "Running and analyzing machine learning experiments in the cloud with AWS, Python, and R".
 
+This tutorial provides an introduction to the cloud via Amazon Web Services (AWS) and covers launching Jupyter notebooks backed by machines in the cloud, some ML with scikit-learn, and analyzing the results using R and Shiny.
+
+![thereisnocloud](https://miro.medium.com/max/650/1*el4nHcOQdfHxzzcTC99jDw.png)
+
 # Content
 
 The slides are available here: [slides.pdf](https://github.com/rikturr/icmla-aws-ml/blob/master/slides.pdf)
 
-The videos for each part:
+The videos for each part are on YouTube:
 
-- Part 1 (Intro to cloud): 
-- Part 2 (ML with Python):
-- Part 3 (Shiny dashboard):
+- Part 1: [Intro to the cloud](https://youtu.be/V_-Hu0PtJu8)
+- Part 2 [ML with Python in Jupyter](https://youtu.be/wQUv5wglo84)
+- Part 3 [Shiny dashboard with R](https://youtu.be/O52FqcREyIo)
 
 ## Part 1: Introduction to the cloud and Amazon Web Services
 
