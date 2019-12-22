@@ -27,14 +27,14 @@ The videos for each part are on YouTube:
 ## Part 2: ML with Python in Jupyter
 
 - Using Medicare payments data, can we predict provider specialties from their billed procedures?
-- Data processing, exploratory analysis, sparse matrix creation [1-medicare-data.ipynb](https://github.com/rikturr/icmla-aws-ml/blob/master/1-medicare-data.ipynb)
-- Train Random Forest model [2-scikit-learn.ipynb](https://github.com/rikturr/icmla-aws-ml/blob/master/2-scikit-learn.ipynb)
+- Data processing, exploratory analysis, sparse matrix creation ([1-medicare-data.ipynb](https://github.com/rikturr/icmla-aws-ml/blob/master/1-medicare-data.ipynb))
+- Train Random Forest model ([2-scikit-learn.ipynb](https://github.com/rikturr/icmla-aws-ml/blob/master/2-scikit-learn.ipynb))
 - Set up grid search experiment that saves results to S3
 
 ## Part 3: Shiny dashboard with R
 
-- Explore grid search results [3-results-analysis.Rmd](https://github.com/rikturr/icmla-aws-ml/blob/master/3-results-analysis.Rmd)
-- Create Shiny dashboard with R [4-shiny-dashboard](https://github.com/rikturr/icmla-aws-ml/blob/master/4-shiny-dashboard/app.R)
+- Explore grid search results ([3-results-analysis.Rmd](https://github.com/rikturr/icmla-aws-ml/blob/master/3-results-analysis.Rmd))
+- Create Shiny dashboard with R ([4-shiny-dashboard](https://github.com/rikturr/icmla-aws-ml/blob/master/4-shiny-dashboard/app.R))
 - Deploy dashboard to [shinyapps.io](https://www.shinyapps.io)
 
 An live example of the Shiny dashboard is here: https://rikturr.shinyapps.io/results_dashboard/
