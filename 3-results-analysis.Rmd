@@ -1,0 +1,54 @@
+---
+title: "Medicare ML Results"
+output: html_notebook
+---
+
+# Load packages
+
+May need to install these packages:
+
+```{r}
+# install.packages('tidyverse')
+# install.packages('aws.s3')
+```
+
+
+```{r}
+library(tidyverse)
+library(aws.s3)
+```
+
+# Get data
+
+```{r}
+?get_object
+```
+
+```{r}
+results <- get_object(bucket = 'rikturr-private', 
+                      object = 'rf_trees/results.csv') %>% 
+  read_csv
+```
+
+```{r}
+summary(results)
+```
+
+# Make nice graph
+
+```{r}
+ggplot(results, aes(x = ntrees, y = test_accuracy)) +
+  geom_point() +
+  stat_summary(fun.y = 'mean', geom = 'line', linetype = 'dotted') +
+  labs(x = 'Number of trees', y = 'Accuracy') +
+  theme_light()
+```
+
+# Make a table
+
+```{r}
+results %>% 
+  group_by(ntrees) %>% 
+  summarise_all(funs(sum))
+```
+
